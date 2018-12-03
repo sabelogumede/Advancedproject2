@@ -3,11 +3,12 @@ Schema = mongoose.Schema;
 
 let UserSchema = new Schema({
     username: {
-        type: string,
-        required: true
+        type: String,
+        required: true,
+        unique: true
     },
     password: {
-        type: string,
+        type: String,
         required: true
     },
     isOver21: {
